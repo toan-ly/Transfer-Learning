@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Feb 19 2024
-
-@author: Toan Ly
-Riverain Tech
-"""
-
 import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
@@ -53,11 +45,11 @@ def display(im):
 mean_subtract_val = np.array([103.939, 116.779, 123.68])
 
 # Load the trained model
-MODEL_PATH = r"C:/Users/tly/Downloads/Riverain/TransferLearning/Model/2024-02-20-TF2.5.0-Net-CP080-8.560E-04-1.828E-01-1.000E+00-9.000E-01.h5"
+MODEL_PATH = r"Model/2024-02-20-TF2.5.0-Net-CP080-8.560E-04-1.828E-01-1.000E+00-9.000E-01.h5"
 model = tf.keras.models.load_model(MODEL_PATH)
     
 # Load the input image
-IMAGE_PATH = glob.glob(r"C:\Users\tly\Downloads\Riverain\TransferLearning\Data\Test\im23.*")[0]
+IMAGE_PATH = glob.glob(r"Data\Test\im23.*")[0]
 im = Image.open(IMAGE_PATH).convert('RGB')
 
 # Display input image and predictions with confidence scores
