@@ -112,8 +112,8 @@ model.summary()
 
 ### DATA
 # Load data 
-data_folder = r'/Users/toanne/Desktop/Riverain Tech/TransferLearning/Data'
-data_folder2 = r'/Users/toanne/Desktop/Riverain Tech/TransferLearning/Data'
+data_folder = r'Data'
+data_folder2 = r'Data'
 
 
 train_files = glob.glob(data_folder2 + r'/Train/*.mat') 
@@ -166,7 +166,7 @@ epoch_n = 200
 monitoring = 'val_loss'
 monitor_mode = 'min'
 addiFmt = '-{accuracy:.3E}-{val_accuracy:.3E}'
-out_folder = r'/Users/toanne/Desktop/Riverain Tech/TransferLearning/Model'
+out_folder = r'Model'
 
 
 ### Define callbacks 
